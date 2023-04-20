@@ -1,10 +1,11 @@
 <h1 align="center"><img src="Graphics/GW2MB150.png" alt="Program Icon"><br />GW2-MultiBox</h1>
 
-![GitHub Stars](https://img.shields.io/github/stars/TikoTako/GW2-MultiBox.svg?style=flat-square)
-![GitHub Issues](https://img.shields.io/github/issues/TikoTako/GW2-MultiBox.svg?style=flat-square)
-![GitHub release](https://img.shields.io/github/release/TikoTako/GW2-MultiBox?include_prereleases=&sort=semver&style=flat-square)
-[![GPLv3 License](https://img.shields.io/badge/Delphi-10.4.2%20CE-red.svg?style=flat-square)](https://www.gnu.org/licenses/)
-[![GPLv3 License](https://img.shields.io/badge/License-GPLv3-green.svg?style=flat-square)](https://www.gnu.org/licenses/) <br/>
+![GitHub Issues](https://img.shields.io/github/stars/TikoTako/GW2-MultiBox?color=FFDD00&style=flat-square)
+![GitHub Issues](https://img.shields.io/github/issues/TikoTako/GW2-MultiBox?color=FFAA00&style=flat-square)
+![GitHub Issues](https://img.shields.io/github/issues-closed/TikoTako/GW2-MultiBox?color=99FF99&style=flat-square)
+![GitHub release](https://img.shields.io/github/release/TikoTako/GW2-MultiBox?include_prereleases=&sort=semver&color=00BFFF&style=flat-square)
+[![GPLv3 License](https://img.shields.io/badge/Delphi-10.4.2%20CE-FF4500.svg?style=flat-square)](https://www.gnu.org/licenses/)
+[![GPLv3 License](https://img.shields.io/badge/License-GPLv3-7B68EE.svg?style=flat-square)](https://www.gnu.org/licenses/) <br/>
 Simple program that open multiple "Guild Wars 2" clients. <br/>
 Multibox is allowed as stated >[HERE](https://help.guildwars2.com/hc/en-us/articles/360013658134-Policy-Dual-or-Multi-Boxing)< <br/>
 Command line arguments can be found in the wiki >[HERE](https://wiki.guildwars2.com/wiki/Command_line_arguments)<
