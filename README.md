@@ -8,7 +8,7 @@
 [![GPLv3 License](https://img.shields.io/badge/License-GPLv3-7B68EE.svg?style=flat-square)](https://www.gnu.org/licenses/) <br/>
 Simple program that open multiple "Guild Wars 2" clients. <br/>
 Multibox is allowed as stated >[HERE](https://help.guildwars2.com/hc/en-us/articles/360013658134-Policy-Dual-or-Multi-Boxing)< <br/>
-Command line arguments can be found in the wiki >[HERE](https://wiki.guildwars2.com/wiki/Command_line_arguments)<
+"Guild Wars 2" command line arguments can be found in the wiki >[HERE](https://wiki.guildwars2.com/wiki/Command_line_arguments)<
 
 ## Features
 - Start the game from any path.
@@ -17,27 +17,30 @@ Command line arguments can be found in the wiki >[HERE](https://wiki.guildwars2.
 - Simple setup for multiple settings by using windows shortcuts.
 
 ## TODO
-1. GUI mode.
-2. Auto-Login.
+- GUI mode.
+- Auto-Login.
 
 ## Usage
 Command line arguments:
 
-```-ShowDebugWindow``` Show the debug output in both Console and GUI mode.<br />
-```-UseDebugClient``` Use the dummy client (i made it for fast testing).<br />
-```-ConsoleMode``` Start in Console mode which accept these additional parameters:<br />
-- ```-UseClientPath:"path"``` Path of the game exe.
-- ```-Params:"-param1 -param2"``` Command line arguments for the client.
+- ```-ShowDebugWindow``` Show the debug output in both Console and GUI mode.<br />
+- ```-UseDebugClient``` Use the dummy client (i made it for fast testing).<br />
+- ```-ConsoleMode``` Start in Console mode which accept these additional parameters:<br />
+   - ```-UseClientPath:"path"``` Path of the game exe.
+   - ```-Params:"-param1 -param2"``` Command line arguments for the client.
 
 #### Some examples:	
-```GW2MB.exe -ShowDebugWindow``` Open in GUI mode with the debug window.<br />
-```GW2MB.exe -ConsoleMode -Params:"-nomusic -nosound -whatever"``` Open in console mode and forward the arguments to the client.<br />
-```GW2MB.exe -ConsoleMode -UseClientPath:"g:\ames\topkek\gw2-64.exe" -Params:"-mumble potato"``` Same as above but point at another another path for the exe.<br />
-```GW2MB.exe -ConsoleMode -ShowDebugWindow -Params:"-dx9" -UseClientPath:"c:\gamz\gw2-64.exe"``` Same as above plus show the debug window.<br />
-
+```GW2MB.exe -ShowDebugWindow```<br />
+Open in **GUI** mode with the debug window.<br />
+```GW2MB.exe -ConsoleMode -Params:"-nomusic -nosound -whatever"```<br />
+Open in **CONSOLE** mode and forward the arguments to the game.<br />
+```GW2MB.exe -ConsoleMode -UseClientPath:"g:\ames\topkek\gw2-64.exe"```<br />
+Open in **CONSOLE** mode and use the specified path to open the game.<br />
+```GW2MB.exe -ConsoleMode -ShowDebugWindow "```<br />
+Open in **CONSOLE** mode and show the debug window.<br />
 
 #### NOTE:	
-```-UseClientPath``` is ignored if ```-UseDebugClient``` is used.<br />
+Is possible to use all the arguments but```-UseClientPath``` is ignored if ```-UseDebugClient``` is used.<br />
 
 ## Dependencies
 This project utilize [LoggerPro](https://github.com/danieleteti/loggerpro) to log on file/console.
