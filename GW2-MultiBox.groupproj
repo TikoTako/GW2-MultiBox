@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{0BF5C2A8-6809-41E4-A9F2-4DD527D72B86}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="DummyClient\DummyClient.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="GW2MB\GW2MB.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="DummyClient">
+        <MSBuild Projects="DummyClient\DummyClient.dproj"/>
+    </Target>
+    <Target Name="DummyClient:Clean">
+        <MSBuild Projects="DummyClient\DummyClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DummyClient:Make">
+        <MSBuild Projects="DummyClient\DummyClient.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GW2MB">
+        <MSBuild Projects="GW2MB\GW2MB.dproj"/>
+    </Target>
+    <Target Name="GW2MB:Clean">
+        <MSBuild Projects="GW2MB\GW2MB.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GW2MB:Make">
+        <MSBuild Projects="GW2MB\GW2MB.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="DummyClient;GW2MB"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="DummyClient:Clean;GW2MB:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="DummyClient:Make;GW2MB:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
